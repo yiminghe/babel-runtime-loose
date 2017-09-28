@@ -1,0 +1,38 @@
+{
+  "name": "babel-runtime-loose",
+  "version": "6.0.1",
+  "description": "loose version of babel-runtime",
+  "files": [
+    "helpers"
+  ],
+  "scripts": {
+    "pub": "npm run lint && git push origin && npm publish",
+    "lint": "eslint --ext .js .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yiminghe/babel-runtime-loose.git"
+  },
+  "keywords": [
+    "babel",
+    "runtime"
+  ],
+  "author": "yiminghe@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yiminghe/babel-runtime-loose/issues"
+  },
+  "homepage": "https://github.com/yiminghe/babel-runtime-loose#readme",
+  "devDependencies": {
+    "babel-eslint": "^8.0.1",
+    "eslint": "^3.0.1",
+    "eslint-plugin-import": "^1.10.3",
+    "eslint-plugin-react": "^7.4.0",
+    "pre-commit": "1.x",
+    "eslint-config-airbnb-es5": "^1.2.0"
+  },
+  "pre-commit": [
+    "lint"
+  ]
+}
