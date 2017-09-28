@@ -1,4 +1,4 @@
-# babel-loose-runtime
+# babel-runtime-loose
 
 loose version of babel-runtime, reduce final bundle size.
 
