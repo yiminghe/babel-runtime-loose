@@ -13,5 +13,6 @@ webpack:
    "alias": {
      "babel-runtime":"babel-runtime-loose"
    } 
+  }
 }
 ```
