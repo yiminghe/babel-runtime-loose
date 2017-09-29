@@ -6,9 +6,9 @@
     "helpers"
   ],
   "scripts": {
-    "pub": "npm run lint && git push origin && npm publish",
-    "lint": "eslint --ext .js .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pub": "npm test && npm run lint && git push origin && npm publish",
+    "lint": "eslint --ext .js helpers",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -24,7 +24,13 @@
     "url": "https://github.com/yiminghe/babel-runtime-loose/issues"
   },
   "homepage": "https://github.com/yiminghe/babel-runtime-loose#readme",
+  "jest": {
+    "collectCoverageFrom": [
+      "helpers/*"
+    ]
+  },
   "devDependencies": {
+    "jest": "20.x",
     "babel-eslint": "^8.0.1",
     "eslint": "^3.0.1",
     "eslint-plugin-import": "^1.10.3",
