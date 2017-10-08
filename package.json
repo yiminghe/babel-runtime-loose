@@ -6,6 +6,7 @@
     "helpers"
   ],
   "scripts": {
+    "coverage": "jest --coverage && cat ./coverage/lcov.info | coveralls",
     "pub": "npm test && npm run lint && git push origin && npm publish",
     "lint": "eslint --ext .js helpers",
     "test": "jest"
@@ -30,6 +31,7 @@
     ]
   },
   "devDependencies": {
+    "coveralls": "^2.12.0",
     "jest": "20.x",
     "babel-eslint": "^8.0.1",
     "eslint": "^3.0.1",
