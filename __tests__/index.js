@@ -9,7 +9,7 @@ describe('possibleConstructorReturn', function () {
 
     expect(possibleConstructorReturn(self, call)).toBe(call);
 
-    expect(possibleConstructorReturn(self, 1)).toBe(self);
+    expect(possibleConstructorReturn(self, undefined)).toBe(self);
   });
 });
 
