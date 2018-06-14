@@ -1,4 +1,4 @@
-const slice = Array.prototype.slice;
+var slice = Array.prototype.slice;
 
 module.exports = function toConsumableArray(a) {
   if (a) {

@@ -1,4 +1,4 @@
-const slice = Array.prototype.slice;
+var slice = Array.prototype.slice;
 
 module.exports = function _extends(to) {
   var from = slice.call(arguments, 1);
